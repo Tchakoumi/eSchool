@@ -4,11 +4,12 @@ import './CompositionListItem.css';
 
 
 
-export default function CompositionListItem(props) {
+export default class CompositionListItem {
+        render(){
     return (
-            <Link to = {`/${props.link}`} className = "comp composTitle">
-                    {props.nomMatiere}
-                    <span>{props.typeCompos}</span>
+            <Link to = {`/${this.props.link}`} className = "comp composTitle">
+                    {this.props.nomMatiere}
+                    <span>{this.props.typeCompos}</span>
             </Link>           
-    )
+    )}
 }

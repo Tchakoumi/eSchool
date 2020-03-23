@@ -26,7 +26,7 @@ class Signin extends Component {
 			
 			if(this.verifyValidUser(this.state.user_name) === this.state.user_password){
 				this.props.createConnectedUser(this.state.user_name)
-				this.props.history.push(`/dashboard/${this.state.user}`)
+				this.props.history.push(`/dashboard/${this.state.user_name}`)
 				//indicate the right route to go to from here.
 			}else alert(this.state.user_name)
 		}else alert('user does not exist')

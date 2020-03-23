@@ -79,8 +79,9 @@ class Dashbord extends Component
 
     getAllCompos=()=>{
         let data =[]
+        let path = this.props.match.params.username
         this.props.epreuves.map(epreuve=>{
-            let tempObj = {nomMatiere: epreuve.subject, type:epreuve.type}
+            let tempObj = {nomMatiere: epreuve.subject, type:epreuve.type, link:`/dashboard/${path}/${epreuve.subject}`}
             data.push(tempObj)
         })
         return data
