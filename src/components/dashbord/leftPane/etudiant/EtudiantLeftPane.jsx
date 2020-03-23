@@ -21,7 +21,7 @@ export default function EtudiantLeftPane(props)
             textValue:"Devoirs"
         },
         {
-            link:'/dashbord/statitique',
+            link:'/dashbord/Tchapleu/statitiques',
             icon:"fa fa-line-chart",
             textValue:"Statistiques"
         }

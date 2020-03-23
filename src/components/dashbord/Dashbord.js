@@ -9,7 +9,7 @@ import Forum from './forum/Forum';
 import EtudiantLeftPane from './leftPane/etudiant/EtudiantLeftPane';
 import EnseignantLeftPane from './leftPane/enseignant/EnseignantLeftPane';
 import AdminLeftPane from './leftPane/admin/AdminLeftPane';
-import DropDownListItem from './../shared/dropDownList/DropDownList';
+import DropDownList from '../shared/dropDownList/DropDownList'
 import StatistiquePageAdmin from './statistique/StatistiquePageAdmin';
 import Statistique from './../shared/statistique/Statistique';
 
@@ -55,22 +55,12 @@ class Dashbord extends Component
 
                     {/* Liste des compos */}
                     
-                    let data=this.getAllCompos()
-                    return <CompositionList dataList={data}/>;
+                    // let data=this.getAllCompos()
+                    // return <CompositionList dataList={data}/>;
 
-        //         break;
-        //     case 'enseignant':
-        //         if(this.data.user.type==="Admin") return '';
-        //         else return <Redirect to='/dashbord/404' />;
-        //         break;
-        //     case 'modules':
-        //         if(this.data.user.type==="Etudiant")    
-        //         {
-        //             let data=[];
-        //             return <DropDownListItem dataList={data}/>;
-        //         }
-        //         else return <Redirect to='/dashbord/404' />;
-        //         break;
+
+                    let data=[];
+                    return <DropDownList />;
         //     case 'devoirs':
         //         if(this.data.user.type==="Etudiant")    
         //         {
@@ -94,7 +84,7 @@ class Dashbord extends Component
                     <div className="row">
                         <span>{this.props.page_name}</span>
                     </div>
-                        {/* {this.checkMainContent()} */}
+                        {this.checkMainContent()}
                      </div>
                  </div>
              </div>

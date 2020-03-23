@@ -14,7 +14,7 @@ class DropDownList extends Component {
             open:'',
             dataList : [
                 {
-                    itemName:"Mathematiques I",
+                    itemName:"Mathematiques",
                     subItemList:[
                         {link:"Hi", subItemName:"Algebre"}
                     ]
@@ -38,14 +38,15 @@ class DropDownList extends Component {
 
     handlePlusClick= (e, prop) =>{
         e.preventDefault();
-        const currentClass = document.getElementById(`${prop}`).classList
+        console.log(document.getElementById(`${prop}DropIcon`).classList.contains('fa'))
+        const currentClass = document.getElementById(`${prop}DropIcon`).classList
         if(currentClass.contains("fa-plus-circle")){
-            this.changeToMinus(prop)
+            this.changeToMinus(prop+'DropIcon')
             if(this.state.open!==''){this.changeToPlus(this.state.open)}
             this.setState({open:prop})
         }
         else{
-            this.changeToPlus(prop)
+            this.changeToPlus(prop+'DropIcon')
             this.setState({open:''})
         }
     }
@@ -67,6 +68,7 @@ class DropDownList extends Component {
             }
         </div>
     ))
+
 
     render(){
         return (
