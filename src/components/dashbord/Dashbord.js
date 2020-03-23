@@ -34,10 +34,10 @@ class Dashbord extends Component
 
     checkNavBar()
     {
-        if(this.data.user.type === "Etudiant")    return <EtudiantLeftPane user={this.data.user}/>;
-        else if(this.data.user.type === "Enseignant") return <EnseignantLeftPane user={this.data.user}/>;
-        else if(this.data.user.type === "Admin") return <AdminLeftPane user={this.data.user}/>;
-        else return <Redirect to='/signin' />;
+        return <EtudiantLeftPane user={this.data.user}/>;
+        // else if(this.data.user.type === "Enseignant") return <EnseignantLeftPane user={this.data.user}/>;
+        // else if(this.data.user.type === "Admin") return <AdminLeftPane user={this.data.user}/>;
+        // else return <Redirect to='/signin' />;
     }
 
     getAllCompos=()=>{
@@ -85,19 +85,19 @@ class Dashbord extends Component
     render()
     {
         return (
-            // <div className="row">
-            //     <div className="col-sm-4 col-md-4">
-            //         {this.checkNavBar()}
-            //     </div>
-            //     <div className="col-sm-8 col-md-8">
-            //         <div className="container">
-            //         <div className="row">
-            //             <span>{this.props.page_name}</span>
-            //         </div>
-                        this.checkMainContent()
-            //         </div>
-            //     </div>
-            // </div>
+            <div className="row">
+                <div className="col-sm-4 col-md-4">
+                    {this.checkNavBar()}
+                </div>
+                <div className="col-sm-8 col-md-8">
+                    <div className="container">
+                    <div className="row">
+                        <span>{this.props.page_name}</span>
+                    </div>
+                        {/* {this.checkMainContent()} */}
+                     </div>
+                 </div>
+             </div>
         );
     }
 }
