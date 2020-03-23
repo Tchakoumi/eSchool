@@ -3,14 +3,15 @@ import './NavLink.css'
 import { Link } from 'react-router-dom';
 
 export default function NavLink(props) {
+    console.log(props);
     return (
         <div className="parent">
-            <Link to={`/${props.link}`} className = "navLink">
+            <a href={props.link} className = "navLink">
                 <span>
                     <i className={`${props.icon}`} />
                     {props.textValue}
                 </span>
-            </Link>
+            </a>
         </div>
     )
 }

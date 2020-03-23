@@ -6,22 +6,22 @@ export default function EtudiantLeftPane(props)
 {
     const linkData=[
         {
-        link:'/dashbord/modules',
+        link:'/dashboard/Tchapleu/modules',
             icon:'fa fa-folder-open',
             textValue:'Modules'
         },
         {
-            link:'/dashbord/compositions', 
+            link:'/dashboard/compositions', 
             icon:"fa fa-book", 
             textValue:"Composition"
         },
         {
-            link:'/dashbord/devoirs',
+            link:'/dashboard/devoirs',
             icon:"fa fa-edit",
             textValue:"Devoirs"
         },
         {
-            link:'/dashbord/Tchapleu/statitiques',
+            link:'/dashboard/Tchapleu/statitiques',
             icon:"fa fa-line-chart",
             textValue:"Statistiques"
         }
