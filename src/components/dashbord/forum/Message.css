@@ -1,0 +1,51 @@
+.Message
+{
+    margin-bottom:30px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+.sender-name
+{
+    color: #FEFEFE;
+    background-color: #6F6F6F;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius:5px 5px 0px 0px;
+}
+.message-left .message-content,
+.message-right .message-content
+{
+    font-family: Times New Roman;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;    
+    color: #000000;
+}
+
+.message-right .message-content
+{
+    border-radius: 5px 0px 0px 10px;
+    background-color: #15A81B;
+}
+.message-left .message-content
+{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #FEFEFE;
+}
+.message-content
+{
+    padding:5px;
+}
+.sender-name,
+.message-content
+{
+    width:auto;
+}
+.align-self-end
+{
+    float:right
+}

@@ -1,0 +1,9 @@
+.newQuestionForm,
+.addAnswerForm {
+    display: grid;
+}
+
+.addQuestion,
+.answer {
+    justify-self: end;
+}

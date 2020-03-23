@@ -1,0 +1,24 @@
+.parent {
+    width: 100%;
+    max-width: 650px;
+}
+
+.navLink {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: #494848;
+    color: white;
+    max-width: 650px;
+    margin-bottom: 3px;
+}
+
+.navLink i {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+a {
+    padding: 10px 0;
+    text-decoration: none;
+}

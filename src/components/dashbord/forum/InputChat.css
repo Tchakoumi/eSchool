@@ -1,0 +1,8 @@
+.inputChat input
+{
+    border-radius: 10px;
+}
+i[class="fa fa-send fa-1x"]
+{
+    margin-right: 5px;
+}

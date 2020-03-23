@@ -1,0 +1,12 @@
+.zone_message
+{
+    height:400px;
+    overflow-y: scroll;
+    background: #C4C4C4;
+    padding: 10px;
+}
+.chat
+{
+    padding-left: 7px !important;
+    padding-right: 8px !important;
+}

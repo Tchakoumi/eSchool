@@ -1,0 +1,106 @@
+body
+{
+    background: url('./../../../asset/background.jpg') no-repeat center;
+}
+
+
+#signup-form
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    top: -30px;
+}
+
+
+#signup-form #signup-form-title
+{
+    text-align: center;
+    background-color: #15A81B;
+    color: #ffffff;
+    padding: 1.2em 0 1.2em 0;
+}
+
+
+#signup-form #signup-form-title>span
+{
+    font-size: 28px;
+    font-size: 'arial';
+    font-weight: bolder;
+}
+
+#signup-form #signup-form-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+ 
+}
+
+
+#signup-form #signup-form-section #signup-form-section-fields
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 50%;
+    margin: 0% 25% 6.5% 25%;
+}
+
+#signup-form #signup-form-section #signup-form-section-fields:nth-child(1)
+{
+    margin-top: 3%;
+}
+
+#signup-form #signup-form-section #signup-form-section-fields *
+{
+    margin-top: 2%;
+    border-radius: 10px; 
+    opacity: 0.65;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    height: 50px;
+    outline-offset: -2px;
+    outline-color: transparent;
+    margin-left:5px;
+}
+
+#signup-form #signup-form-section #signup-form-section-fields>span
+{
+    display: flex;
+    flex-direction: row-reverse;
+   
+    justify-content: flex-start;
+    opacity: 1;
+    margin-top: 2%;
+
+    color: #ffffff;
+}
+
+#signup-form #signup-form-section #signup-form-section-fields>span input
+{
+   margin:-6px 3% 0px 0px;
+   width: 12px;
+   height: 60px;
+}
+
+#signup-form #signup-form-section #signup-form-section-submit
+{
+    width: 50%;
+    margin: 0% 25% 0% 25%;
+}
+
+#signup-form #signup-form-section #signup-form-section-submit>input
+{
+    background-color: #15A81B;
+    color: #ffffff;
+    width: 70%;
+    margin: 0% 15% 0% 15%;
+    border-radius: 20px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}

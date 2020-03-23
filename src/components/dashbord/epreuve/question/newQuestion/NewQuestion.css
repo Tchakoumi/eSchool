@@ -1,0 +1,19 @@
+.newQuestionBtn {
+    background-color: aqua;
+    width: fit-content;
+    padding: 5px 3px;
+    border-radius: 10px;
+}
+
+.newQuestion {
+    border: none;
+    background-color: transparent;
+}
+
+.newQuestion:focus {
+    outline: none;
+}
+
+.radioLabel {
+    margin-right: 10px;
+}

@@ -1,0 +1,37 @@
+.headerCours
+{
+    background: #C4C4C4;
+    font-weight: bolder;
+    font-size: large;
+    padding-top: 15px;
+    justify-content: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.header-cours
+{
+    margin-left:15px;   
+}
+.green-live,
+.black-live
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+.green-live
+{
+    background-color: green;
+}
+.black-live
+{
+    background-color: #666666;
+}
+@media (max-width: 992px) { 
+    img[alt="Profile"]
+    {
+        margin-left:0px;
+    }
+}
