@@ -6,12 +6,12 @@ export default function NavLink(props) {
     console.log(props);
     return (
         <div className="parent">
-            <a href={props.link} className = "navLink">
+            <Link to={props.link} className = "navLink">
                 <span>
                     <i className={`${props.icon}`} />
                     {props.textValue}
                 </span>
-            </a>
+            </Link>
         </div>
     )
 }

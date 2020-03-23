@@ -21,9 +21,14 @@ export default function EtudiantLeftPane(props)
             textValue:"Devoirs"
         },
         {
-            link:'/dashboard/Tchapleu/statitiques',
+            link:'/dashboard/Tchapleu/statistiques',
             icon:"fa fa-line-chart",
             textValue:"Statistiques"
+        },
+        {
+            link: '/dashboard/Tchapleu/math/forum',
+            icon: "fa fa-user",
+            textValue: "Forum"
         }
     ];
     return (<LeftPane userData={props.user} linkData={linkData}/>);
