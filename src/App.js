@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 import Signin from './components/auth/signin/Signin';
 import Signup from './components/auth/signup/Signup';
 import Dashbord from './components/dashbord/Dashbord';
-import AfficheNotes from './components/AfficheNotes';
+import AfficheNotes from './AfficheNotes';
+import Module from './Module';
+import Forum from './Forum';
 
 
 function App() {
@@ -17,7 +19,10 @@ function App() {
         <Route exact path='/signup' component={Signup} />
         <Route exact path='/dashboard/:username' component={Dashbord} />
         <Route exact path='/dashboard/:username/statistiques' component={AfficheNotes} />
+        <Route exact path='/dashboard/:username/modules' component={Module} />
+        <Route exact path='/dashboard/:username/:matiere/forum' component={Forum} />
         {/* <Redirect to='/' />         */}
+
       </Switch>
     </Router>
   );

@@ -10,7 +10,6 @@ class Forum extends Component
     constructor()
     {
         super();
-        console.log("ta")
         this.data={
             currentUser:{
                 typeCompte:'Etu',

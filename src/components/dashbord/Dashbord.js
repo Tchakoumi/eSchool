@@ -55,22 +55,8 @@ class Dashbord extends Component
 
                     {/* Liste des compos */}
                     
-                    // let data=this.getAllCompos()
-                    // return <CompositionList dataList={data}/>;
-
-
-                    let data=[];
-                    return <DropDownList />;
-        //     case 'devoirs':
-        //         if(this.data.user.type==="Etudiant")    
-        //         {
-        //             let data=[];
-        //             return '';
-        //         }
-        //         else return <Redirect to='/dashbord/404' />;
-        //         break;
-            
-        // }
+                    let data=this.getAllCompos()
+                    return <CompositionList dataList={data}/>;
     }
     render()
     {

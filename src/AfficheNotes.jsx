@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Statistique from './shared/statistique/Statistique'
+import Statistique from './components/shared/statistique/Statistique'
+import EtudiantLeftPane from './components/dashbord/leftPane/etudiant/EtudiantLeftPane'
 import { connect } from 'react-redux'
 
 class AfficheNotes extends Component {
@@ -60,7 +61,12 @@ class AfficheNotes extends Component {
                 stats: []
             }
         };
-        return <Statistique tdata={stat.faculte.stat} thead={stat.head} />;                        
+        return (
+            <div>
+                {<EtudiantLeftPane user={{}} />}
+                {<Statistique tdata={stat.faculte.stat} thead={stat.head} />}
+
+            </div>)                        
 
     }
 
